@@ -3,8 +3,13 @@
 
 
 <!-- Add model.posts later when hash is implemented -->
+<h3>List of Blog Posts</h3>
 <ul>
   {{#each model as |post|}}
     {{post-tile post=post}}
   {{/each}}
 </ul>
+
+<h3>Add New Blog Post</h3>
+
+{{new-post savePost2="savePost3"}}

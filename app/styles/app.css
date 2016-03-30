@@ -17,3 +17,12 @@ nav {
   overflow: visible;
   text-align: center;
 }
+
+.container {
+  margin: 20px;
+}
+
+img {
+  height: 300px;
+  width: 500px;
+}
