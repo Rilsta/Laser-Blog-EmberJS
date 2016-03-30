@@ -1,2 +1,10 @@
 
 <h1>I'm Here for the Laserz.</h1>
+
+
+<!-- Add model.posts later when hash is implemented -->
+<ul>
+  {{#each model as |post|}}
+    {{post-tile post=post}}
+  {{/each}}
+</ul>
