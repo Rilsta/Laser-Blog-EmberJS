@@ -26,3 +26,8 @@ img {
   height: 300px;
   width: 500px;
 }
+
+li {
+  margin: 30px;
+  list-style-type: none;
+}

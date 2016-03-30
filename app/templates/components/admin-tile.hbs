@@ -1,2 +1,10 @@
-<li>{{#link-to 'post' post.id}}{{post.title}}{{/link-to}}</li>
-<button {{action 'delete' post}}>Delete</button>
+<li>
+  {{#link-to 'post' post.id}}
+    {{post.title}}
+  {{/link-to}}
+
+  {{admin-update post=post update="update"}}
+
+  <button {{action 'delete' post}}>Delete</button>
+  <hr>
+</li>
