@@ -15,6 +15,10 @@ export default Ember.Component.extend({
       };
       this.set('addNewPost', false);
       // recieve savePost2 from index.hbs, emit savePost2 with params into addNewPost in routes/index.js
+      this.set('title', "");
+      this.set('author', "");
+      this.set('img', "");
+      this.set('content', "");
       this.sendAction('savePost2', params);
     }
   }
