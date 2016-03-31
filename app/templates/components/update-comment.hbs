@@ -9,7 +9,7 @@
 
         <div class="form-group">
           <label for="entry">Comment</label>
-          {{input value=entry id="entry" placeholder=comment.entry}}
+          {{textarea value=entry id="entry" placeholder=comment.entry}}
         </div>
 
         <button {{action 'update' comment}}>Save</button>

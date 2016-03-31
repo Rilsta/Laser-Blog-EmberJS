@@ -1,4 +1,4 @@
-{{#if addNewComment}}
+{{#liquid-if addNewComment}}
   <h1>New Comment</h1>
     <div>
       <form>
@@ -9,7 +9,7 @@
 
         <div class="form-group">
           <label for="entry">Enter a Comment:</label>
-          {{input value=entry id="entry"}}
+          {{textarea value=entry id="entry"}}
         </div>
 
         <button {{action 'save1' post}}>Save</button>
@@ -17,4 +17,4 @@
     </div>
 {{else}}
 <button {{action 'commentFormShow'}}>New Comment</button>
-{{/if}}
+{{/liquid-if}}
