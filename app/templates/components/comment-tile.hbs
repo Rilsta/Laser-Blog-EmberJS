@@ -1,8 +1,10 @@
 <!-- shows formatted comment on post -->
 
-<li>
-  <h4>{{comment.user}} says:</h4>
-  {{comment.entry}}
-  {{update-comment comment=comment update="update"}}
-  <button {{action 'delete' comment}}>Delete</button>
-</li>
+  <li>
+    <h4>{{comment.user}} says:</h4>
+    {{comment.entry}}
+    <div class="postButtons">
+    {{update-comment comment=comment update="update"}}
+    <button {{action 'delete' comment}}>Delete</button>
+  </div>
+  </li>

@@ -1,15 +1,16 @@
 <!-- home pg -->
-<h1>I'm Here for the Laserz.</h1>
-
 
 <!-- Add model.posts later when hash is implemented -->
-<h3>List of Blog Posts</h3>
-<ul>
-  {{#each model.posts as |post|}}
-    {{post-tile post=post}}
-  {{/each}}
-</ul>
 
-<h3>Add New Blog Post</h3>
+<div class="homepage">
+  <h2>Blog Posts</h2>
+  <ul>
+    {{#each model.posts as |post|}}
+    {{post-tile post=post}}
+    {{/each}}
+  </ul>
+</div>
+
+<h2>New Sicky Gnar Post</h2>
 
 {{new-post savePost2="savePost3"}}

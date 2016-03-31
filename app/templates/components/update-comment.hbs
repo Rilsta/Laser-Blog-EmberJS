@@ -1,4 +1,4 @@
-{{#if updateCommentForm}}
+{{#liquid-if updateCommentForm}}
   <h4>Update {{comment.user}}'s {{comment.entry}}</h4>
     <div>
       <form>
@@ -17,4 +17,4 @@
     </div>
 {{else}}
     <button {{action 'updateCommentForm'}}>Update</button>
-{{/if}}
+{{/liquid-if}}

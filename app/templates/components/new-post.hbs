@@ -1,15 +1,15 @@
-{{#if addNewPost}}
+{{#liquid-if addNewPost}}
   <form class="newPostForm">
-    <label for="title">Title:</label>
-    {{input value=title id="title"}}
-    <label for="author">Author:</label>
-    {{input value=author id="author"}}
-    <label for="img">Image URL:</label>
-    {{input value=img id="img"}}
-    <label for="content">Content:</label>
-    {{textarea value=content id="content"}}
+    <label for="title">Title:</label><br>
+    {{input value=title id="title"}}<br>
+    <label for="author">Author:</label><br>
+    {{input value=author id="author"}}<br>
+    <label for="img">Image URL:</label><br>
+    {{input value=img id="img"}}<br>
+    <label for="content">Content:</label><br>
+    {{textarea value=content id="content"}}<br>
     <button {{action 'savePost1'}}>Submit</button>
   </form>
 {{else}}
   <button {{action 'postFormShow'}}>New Post</button>
-{{/if}}
+{{/liquid-if}}
