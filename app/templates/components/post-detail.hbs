@@ -1,5 +1,6 @@
 <!-- sets up pg content and layout -->
 
+<!-- post -->
 <h2>{{post.title}}</h2> <br>
 by {{post.author}} <br>
 {{post.img}}
@@ -8,8 +9,9 @@ by {{post.author}} <br>
 <br>
 <p><img src={{post.img}} alt={{post.title}}></p>
 
+<!-- comment -->
 <ul>
   {{#each post.comments as |comment|}}
-    {{comment-tile comment=comment}}
+    {{comment-tile update="update" destroyComment="destroyComment" comment=comment}}
   {{/each}}
 </ul>
