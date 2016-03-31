@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'cool-blog',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://luminous-fire-2765.firebaseio.com/',
+    firebase: 'https://lazerz.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

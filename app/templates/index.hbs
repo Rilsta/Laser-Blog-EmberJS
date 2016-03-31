@@ -5,7 +5,7 @@
 <!-- Add model.posts later when hash is implemented -->
 <h3>List of Blog Posts</h3>
 <ul>
-  {{#each model as |post|}}
+  {{#each model.posts as |post|}}
     {{post-tile post=post}}
   {{/each}}
 </ul>

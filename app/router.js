@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('contact');
   this.route('post', {path: '/post/:post_id'});
   this.route('admin');
+  this.route('comment', {path: '/comment/:comment_id'});
 });
 
 export default Router;
